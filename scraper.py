@@ -1,4 +1,4 @@
-import praw 
+import praw
 import random
 
 def meme_getter():
@@ -20,7 +20,10 @@ def meme_getter():
   data = {
     'title': rand_sub.title,
     'post url': f"https://www.reddit.com/{rand_sub.id}",
-    'image url': rand_sub.url
+    'image url': rand_sub.url,
+    'author': rand_sub.author.name,
+    'upvotes': rand_sub.ups,
+    'downvotes': rand_sub.downs
   }
 
   return data
