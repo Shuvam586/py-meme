@@ -34,7 +34,7 @@ A: You can use it with most of all programming languages. If the language provid
 
 **Q: Can I use it with HTML?**
 
-A - Yes, you can use Javascript to integrate it into your HTML page.
+A: Yes, you can use Javascript to integrate it into your HTML page.
 
 **Q: What if I face an error and don't find a solution?**
 
