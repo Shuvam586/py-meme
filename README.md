@@ -1,6 +1,6 @@
 # **py-meme API**
 ### A simple API for you to integrate into your code and fetch memes.
-#  
+# 
 Documentation: https://py-meme.github.io/docs/  
 Endpoint: https://api.pymeme.repl.co  
 #
@@ -15,9 +15,9 @@ Firstly you need to make a request to this endpoint
 
 A simple request to the URL itself returns data related to a random meme. On top of that, you can pass certain arguments to get some different results. These will be discussed in the next section.
 ## Passing Arguments
-Arguments can be passed as suffixes to the main URL, for example, adding `/help` to the end of the main URL leads to this documentation page. You can even add keywords to get specific memes. Usage of keywords will be discussed in the usage section of the page.
+Arguments can be passed as suffixes to the main URL, for example, adding `/help` to the end of the main URL leads to this documentation page. You can even add keywords to get specific memes. Usage of keywords has been discussed in the usage section of the documentation.
 ## Handling Errors
-We run our API on very lightweight servers and it is not surprising that errors might occur. You need to get well acquainted on how to identify errors and what to do when an error occurs. Detailed instructions on error identification are provided in the usage section of the page.
+We run our API on very lightweight servers and it is not surprising that errors might occur. You need to get well acquainted on how to identify errors and what to do when an error occurs. Detailed instructions on error identification are provided in the usage section of the documentation.
 
 ## FAQs
 **Q: Is the API free to use?**
