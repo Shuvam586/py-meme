@@ -18,7 +18,7 @@ A simple request to the URL itself returns data related to a random meme. On top
 Arguments can be passed as suffixes to the main URL, for example, adding `/help` to the end of the main URL leads to this documentation page. You can even add keywords to get specific memes. Usage of keywords will be discussed in the usage section of the page.
 ## Handling Errors
 We run our API on very lightweight servers and it is not surprising that errors might occur. You need to get well acquainted on how to identify errors and what to do when an error occurs. Detailed instructions on error identification are provided in the usage section of the page.
-#
+
 ## FAQs
 **Q: Is the API free to use?**
 
