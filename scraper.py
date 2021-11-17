@@ -1,10 +1,11 @@
+import os
 import praw
 import random
 
 def meme_getter():
-  clientid = "tkECW-CTMUvaa8vSkGdSbw"
-  clientsecret = "rA1bjxaqNYR107eKFmEgKJDdXFC44g"
-  useragent = "memeAPI"
+  clientid = os.environ['clientid']
+  clientsecret = os.environ['clientsecret']
+  useragent = os.environ['useragent']
   reddit = praw.Reddit(client_id=clientid, client_secret=clientsecret, user_agent=useragent)
 
   subreddit = reddit.subreddit("memes")
@@ -29,9 +30,9 @@ def meme_getter():
   return data
 
 def key_word_meme(keywords):
-  clientid = "tkECW-CTMUvaa8vSkGdSbw"
-  clientsecret = "rA1bjxaqNYR107eKFmEgKJDdXFC44g"
-  useragent = "memeAPI"
+  clientid = os.environ['clientid']
+  clientsecret = os.environ['clientsecret']
+  useragent = os.environ['useragent']
   reddit = praw.Reddit(client_id=clientid, client_secret=clientsecret, user_agent=useragent)
 
   subreddit = reddit.subreddit("memes")
