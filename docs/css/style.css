@@ -1,0 +1,128 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+  padding: 0;
+  margin-left: 300px;
+  background-color: #0D1117;
+  color: #dddddd;
+}
+
+.sidenav {
+  height: 100%; 
+  width: 300px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  /* background-color: #0D1117;  */
+  background-color: #0D1117; 
+  overflow-x: hidden; 
+  padding-top: 20px;
+  }
+  
+.sidenav a {
+  padding: 4px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #dddddd;
+  display: block;
+}
+
+#logo{
+  width: 30px;
+  height: auto;
+}
+
+.main {
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-right: 300px;
+  padding: 0px 10px; 
+}
+
+.showcase{
+  color: #dddddd;
+  font-size: 15px;
+  padding-bottom: 80px;
+}
+
+.show-heading{
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+
+.show-sub-heading{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.heading{
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 13px;
+}
+
+.major-heading{
+  font-size: 35px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.code{
+  font-family: 'Source Code Pro', monospace;
+  background-color: #f8f8f8;
+  color: #000000;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 4px;
+  padding: 7px;
+}
+
+.text{
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 45px;
+}
+
+.text a{
+  text-decoration: underline;
+  color: #dddddd
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes .box{
+  float: left;
+  width: 29%;
+  padding: 10px;
+  text-align: center;
+  color: #242424;
+}
+
+#boxes .box img{
+  width: 75px; 
+}
+
+footer{
+  margin-left: 100px;
+  margin-right: 300px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#foot-text{
+  text-align: center;
+  padding-left: 50px;
+}
