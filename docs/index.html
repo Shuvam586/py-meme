@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>py-meme API</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./assets/3.png">
+    </head>
+    <body>
+        <header></header>
+        <div class="sidenav">
+            <ul style="list-style-type: none;">
+                <li><img src="./assets/3.png" id="logo"></li>
+                <li><b><a href="#" style="text-decoration: none; padding-bottom: 25px; font-size: 22px; color: #dddddd; display: block;">py-meme docs</a></b></li>
+                <li><a href="#overview"><b>OVERVIEW</a></li>
+                <li><a href="#methods"><b>METHODS</a></li>
+                <li><a href="#schema"><b>SCHEMA</a></li>
+                <li><a href="#quickstart"><b>QUICKSTART</a></li>
+                <li><a href="#feedback"><b>FEEDBACK</a></li>    
+            </ul>
+        </div>
+        <div class="main">
+            <div class="showcase">
+                <div class="show-heading">py-meme API</div>
+                <div class="show-sub-heading">A simple API for you to integrate into your code and fetch memes.</div>
+            </div>
+            <div class="major-heading" id="overview">
+                Overview
+            </div>
+            <div class="heading">
+                Introduction
+            </div>
+            <div class="text">
+                This is a simple API which you can integrate into your code to fetch memes. The API can be integrated
+                into most programming languages and returns a meme in the form of URLs.
+            </div>
+            <div class="heading">
+                What you need
+            </div>
+            <div class="text">
+                A good programming language and a working internet connection is all you need to use the API. Since the
+                API returns simple URLs, you don't need to get any modules for your platform. All you need is to know how
+                to make requests through the programming language of your choice.
+            </div>
+            <div class="heading">
+                Basic procedure
+            </div>
+            <div class="text">
+                Firstly you need to make a request to this endpoint
+                <div class="code">https://api.pymeme.repl.co</div>
+                A simple request to the URL itself returns data related to a random meme.
+                On top of that, you can pass certain arguments to get some different results.
+                These will be discussed in the next section.
+            </div>
+            <div class="heading">
+                Passing Arguments
+            </div>
+            <div class="text">
+                Arguments can be passed as suffixes to the main URL, for example, adding "/help" to the end of the main
+                URL leads to this documentation page. You can even add keywords to get specific memes. Usage of keywords
+                will be discussed in the methods section of the page.
+            </div>
+            <div class="heading">
+                Handling Errors
+            </div>
+            <div class="text">
+                We run our API on very lightweight servers and it is not surprising that errors might occur. You
+                need to get well acquainted on how to identify errors and what to do when an error occurs. Detailed
+                instructions on error identification are provided in the methods section of the page.
+            </div>
+
+            <div class="heading">
+                FAQs
+            </div>
+            <div class="text">
+                <div><b>Q - Is the API free to use?</b></div>
+                <div>A - Yes, as of now you can use it anytime you want absolutely free of cost.</div>
+                <br>
+                <div><b>Q - Does the API do anything other than access memes?</b></div>
+                <div>A - No, the API is created with a simple design in mind and cannot be used for anything other than memes.</div>
+                <br>
+                <div><b>Q - Can I use it with any programming language?</b></div>
+                <div>A - You can use it with most of all programming languages. If the language provides usage of HTTP requests
+                and JSON data, you can use our API with ease.</div>
+                <br>
+                <div><b>Q - Can I use it with HTML?</b></div>
+                <div>A - Yes, you can use Javascript to integrate it into your HTML page.</div>
+                <br>
+                <div><b>Q - What if I face an error and don't find a solution?</b></div>
+                <div>A - You can contact us on the discord info given and report bugs or get help with specific errors.</div>
+            </div>
+            <br>
+
+
+
+
+            <div class="major-heading" id="methods">
+                Methods
+            </div>
+            <div class="heading">
+                Random Meme
+            </div>
+            <div class="text">
+                <div>Responds with a random meme from the "r/memes" sub-reddit from reddit.com.</div>
+                <br>
+                <div><b>Endpoints:</b> 
+                    <div class="code">https://api.pymeme.repl.co/</div>
+                    <div class="code">https://api.pymeme.repl.co/random/</div>
+                </div>
+                <div><b>Returns:</b> A response in JSON format, which contains the post URL, image URL and the meme title.</div>
+                <div><b>Return type:</b> Dictionary</div>
+            </div>
+            <div class="heading">
+                Meme Search
+            </div>
+            <div class="text">
+                <div>Responds with the meme found after searching with the given keywords.
+                    Note: If no meme is found with the given keywords, a random meme is sent.</div>
+                <br>
+                <div><b>Endpoint:</b> 
+                    <div class="code">https://api.pymeme.repl.co/query=[queries]</div>
+                </div>
+                <div>Note: if multiple queries are present they can be mentioned one after the other, separated by a "+"</div>
+                <div><b>Returns:</b> A response in JSON format, which contains the post URL, image URL and the meme title.</div>
+                <div><b>Return type:</b> Dictionary</div>
+            </div>
+            <div class="heading">
+                Docs
+            </div>
+            <div class="text">
+                <div>Doesn't respond with anything. However, this URL will redirect to the Documentation of the API.</div>
+                <br>
+                <div><b>Endpoint:</b> 
+                    <div class="code">https://api.pymeme.repl.co/help</div>
+                </div>
+                <div><b>Returns:</b> The Documentation of the py-meme API</div>
+                <div><b>Return type:</b> Redirect</div>
+            </div>
+            
+
+
+            <div class="major-heading" id="schema">
+                Response Schema
+            </div>
+            <div class="text">
+                <div>The sole response format of the API is JSON.</div>
+                <br>
+                <div>A "response" property is always returned, which describes the communication between our server and the user's system. An error message is returned in the "response" property, if an error occurs.</div>
+                <br>
+                <div>All the meme content is present in the "meme" property of the response.</div>
+                <br>
+                <div>Note: The meme property is not present if an error occurs.</div>
+                <br>
+                <div>An example of a successful request.</div>
+                <div class="code">
+                    <div>{</div>
+                    <div>    "meme":</div>
+                    <div>    {</div>
+                    <div>        "author":"anoreksicni",</div>
+                    <div>        "downvotes":0,</div>
+                    <div>        "image url":"https://i.redd.it/0wbivqv9nvr31.jpg",</div>
+                    <div>        "post url":"https://www.reddit.com/dgcej8",</div>
+                    <div>        "title":"Its all coming together",</div>
+                    <div>        "upvotes":177702</div>
+                    <div>    },</div>
+                    <div>    "response":"Successfully fetched meme."</div>
+                    <div>}</div>
+                </div>
+                <div>An example of an unsuccessful request.</div>
+                <div class="code">
+                    <div>{</div>
+                    <div>    "response":"Error collecting the meme. It might be an error in your request or it might be an error on our side. If you believe it's an error on your side, please visit our documentation page."</div>
+                    <div>}</div>
+                </div>
+            </div>
+
+
+
+            <div class="major-heading" id="quickstart">
+                Quickstart
+            </div>
+            <div class="text">
+                This guide explains how to set up a simple program in the following programming languages that can make requests to the py-meme API.
+            </div>
+            <div class="heading" id="js">
+                JavaScript
+            </div>
+            <div class="code">
+
+            </div>
+            <br>
+            <br>
+            <div class="heading" id="python">
+                Python
+            </div>
+            <div class="code">
+                <div>import requests</div>
+                <div>URL = "https://api.pymeme.repl.co/"</div>
+                <div>response = requests.get(URL)</div>
+                <div>data = response.json()</div>
+                <div>print(data)</div>
+            </div>
+
+
+
+
+
+            <div class="major-heading" id="feedback">
+                Feedback
+            </div>
+            <div class="text">
+                Feel free to fill up the form or write to us on Discord or via mail, if you want to give your feedback, report a problem, give a suggestion or ask for help.
+                <div>To fill up the form or write to us on Discord or via mail, click on any of the icons below.</div>
+            </div>
+            <section id="boxes">
+                <div class="container">
+                    <a href="mailto:pycordmeme@gmail.com?cc=shanta.mitra.sm@gmail.com, chickenpakale@gmail.com"><div class="box">
+                        <img src="./assets/gmail.png">
+                    </div></a>
+
+                    <a href="https://forms.gle/sB82BkdSjzu6XUe8A"><div class="box">
+                        <img src="./assets/forms.png">
+                    </div></a>
+                    
+                    <a href="https://discord.gg/vsuD2TtsCC"><div class="box">
+                        <img src="./assets/discord.png">
+                    </div></a>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <section>
+                <p id="foot-text">Version 1.0.1</p>
+            </section>
+        </footer>
+    </body>
+</html>
