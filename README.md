@@ -30,7 +30,7 @@ A: No, the API is created with a simple design in mind and cannot be used for an
 
 **Q: Can I use it with any programming language?**
 
-A: You can use it with most of all programming languages. If the language provides usage of Http requests and JSON data, you can use our API with ease.
+A: You can use it with most of all programming languages. If the language provides usage of HTTP requests and JSON data, you can use our API with ease.
 
 **Q: Can I use it with HTML?**
 
